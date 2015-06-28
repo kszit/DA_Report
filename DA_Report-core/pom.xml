@@ -5,19 +5,22 @@
 	<modelVersion>4.0.0</modelVersion>
 	<parent>
 		<artifactId>DA_Report</artifactId>
-		<groupId>com.kszit</groupId>
+		<groupId>com.kszit.dareport</groupId>
 		<version>0.0.1-SNAPSHOT</version>
 		<relativePath>../DA_Report/pom.xml</relativePath>
 	</parent>
+	
 	<artifactId>DA_Report-core</artifactId>
 	<name>DA_Report-core</name>
 
 	<url>http://maven.apache.org</url>
-	<properties>
-		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-	</properties>
+	
 	<dependencies>
+		<dependency>
+			<groupId>com.kszit.dareport</groupId>
+			<artifactId>DA_Report-base</artifactId>
+			<version>${dareport.version}</version>
+		</dependency>
 	</dependencies>
-
 	
 </project>

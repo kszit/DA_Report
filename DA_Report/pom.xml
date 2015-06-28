@@ -1,45 +1,89 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
 	<modelVersion>4.0.0</modelVersion>
-	<groupId>com.kszit</groupId>
+	<groupId>com.kszit.dareport</groupId>
 	<artifactId>DA_Report</artifactId>
-	<version>0.0.1-SNAPSHOT</version>
+	<version>${dareport.version}</version>
 	<packaging>pom</packaging>
 	<name>DA_Report</name>
+	
+	<modules>
+		<module>../DA_Report-core</module>
+		<module>../DA_Report-web</module>
+		<module>../DA_Report-base</module>
+	</modules>
+	
+	<properties>
+		<dareport.version>0.0.1-SNAPSHOT</dareport.version>
+		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+		<junit.version>4.12</junit.version>
+		<log.slf4j.version>1.7.12</log.slf4j.version>
+		<log.slf4j.log4j.version>1.7.12</log.slf4j.log4j.version>
+		<log.log4j.version>1.2.17</log.log4j.version>
+		<db.h2.version>1.4.180</db.h2.version>
+		<db.mybatis.version>3.2.2</db.mybatis.version>
+	</properties>
+	
+	<dependencyManagement>
+		<dependencies>
+			<dependency>
+				<groupId>junit</groupId>
+				<artifactId>junit</artifactId>
+				<version>${junit.version}</version>
+				<type>jar</type>
+				<scope>test</scope>
+			</dependency>
+			<dependency>
+				<groupId>org.slf4j</groupId>
+				<artifactId>slf4j-api</artifactId>
+				<version>${log.slf4j.version}</version>
+				<type>jar</type>
+				<scope>compile</scope>
+			</dependency>
+			<dependency>
+				<groupId>org.slf4j</groupId>
+				<artifactId>slf4j-log4j12</artifactId>
+				<version>${log.slf4j.log4j.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>log4j</groupId>
+				<artifactId>log4j</artifactId>
+				<version>${log.log4j.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>com.h2database</groupId>
+				<artifactId>h2</artifactId>
+				<version>${db.h2.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>org.mybatis</groupId>
+				<artifactId>mybatis</artifactId>
+				<version>${db.mybatis.version}</version>
+			</dependency>
+		</dependencies>
+	</dependencyManagement>
+	
 	<dependencies>
 		<dependency>
 			<groupId>junit</groupId>
 			<artifactId>junit</artifactId>
-			<version>4.12</version>
-			<type>jar</type>
-			<scope>test</scope>
 		</dependency>
-		
 		
 		<dependency>
 			<groupId>org.slf4j</groupId>
 			<artifactId>slf4j-api</artifactId>
-			<version>1.7.12</version>
-			<type>jar</type>
-			<scope>compile</scope>
 		</dependency>
 		<dependency>
 			<groupId>org.slf4j</groupId>
 			<artifactId>slf4j-log4j12</artifactId>
-			<version>1.7.12</version>
 		</dependency>
 		<dependency>
 			<groupId>log4j</groupId>
 			<artifactId>log4j</artifactId>
-			<version>1.2.17</version>
 		</dependency>
 		
-		
 	</dependencies>
-	<modules>
-		<module>../DA_Report-core</module>
-		<module>../DA_Report-web</module>
-	</modules>
+	
 
 
 	<build>
