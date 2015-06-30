@@ -3,7 +3,7 @@
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>com.kszit.dareport</groupId>
 	<artifactId>DA_Report</artifactId>
-	<version>${dareport.version}</version>
+	<version>0.0.1-SNAPSHOT</version>
 	<packaging>pom</packaging>
 	<name>DA_Report</name>
 	
