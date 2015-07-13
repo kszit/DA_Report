@@ -9,10 +9,10 @@ import com.kszit.stu.webInvoke.web.controle.engine.Engine;
  * @author Administrator
  *
  */
-public class JsonDataTest extends Controle{
+public class CopyOfJsonDataTest extends Controle{
 	
 	static{
-		Engine.getInstance().registerControle(JsonDataTest.class);
+		Engine.getInstance().registerControle(CopyOfJsonDataTest.class);
 	}
 	
 	/**

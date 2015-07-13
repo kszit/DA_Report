@@ -30,6 +30,10 @@
 					<artifactId>slf4j-jdk14</artifactId>
 					<groupId>org.slf4j</groupId>
 				</exclusion>
+				<exclusion>
+					<artifactId>servlet-api</artifactId>
+					<groupId>javax.servlet</groupId>
+				</exclusion>
 			</exclusions>
 		</dependency>
 		<dependency>
@@ -37,7 +41,12 @@
 			<artifactId>DA_Report-core</artifactId>
 			<version>${dareport.version}</version>
 		</dependency>
-		
+		<dependency>
+			<artifactId>servlet-api</artifactId>
+			<groupId>javax.servlet</groupId>
+			<version>2.5</version>
+			<scope>provided</scope>
+		</dependency>
 	</dependencies>
 	
 	<build>
