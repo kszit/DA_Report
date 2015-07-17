@@ -8,6 +8,7 @@
     <servlet>
 		<servlet-name>dareport</servlet-name>
 		<servlet-class>com.kszit.stu.webInvoke.web.servlet.ServletDispatcher</servlet-class>
+		<load-on-startup>0</load-on-startup>
 	</servlet>
 	<servlet-mapping>
 		<servlet-name>dareport</servlet-name>
