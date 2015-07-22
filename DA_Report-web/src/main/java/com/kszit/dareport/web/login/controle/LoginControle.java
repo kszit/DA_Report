@@ -17,7 +17,7 @@ public class LoginControle extends Controle{
 	 */
 	public void loginPage(){
 		Page page = new Page();
-		page.setVmName("index.html");
+		page.setVmName("index2.html");
 		super.setPage(page);
 	}
 	/**
@@ -25,7 +25,7 @@ public class LoginControle extends Controle{
 	 */
 	public void getJsonData(){
 		Page page = new Page();
-		page.setJsonContent("dddd");
+		page.setJsonContent("中国打底");
 		super.setPage(page);
 	}
 	
