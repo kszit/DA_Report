@@ -1,4 +1,4 @@
-package com.kszit.dareport.web.controle.test;
+package com.kszit.dareport.web.login.controle;
 
 import com.kszit.stu.webInvoke.web.controle.Controle;
 import com.kszit.stu.webInvoke.web.controle.Page;
@@ -9,10 +9,17 @@ import com.kszit.stu.webInvoke.web.controle.engine.Engine;
  * @author Administrator
  *
  */
-public class CopyOfJsonDataTest extends Controle{
+public class LoginControle extends Controle{
 	
 
-	
+	/**
+	 * dareport/dit.do?a=LoginControle&m=loginPage
+	 */
+	public void loginPage(){
+		Page page = new Page();
+		page.setVmName("index.html");
+		super.setPage(page);
+	}
 	/**
 	 * 调用：dareport/dit.do?a=JsonDataTest&m=getJsonData
 	 */

@@ -11,10 +11,7 @@ import com.kszit.stu.webInvoke.web.controle.engine.Engine;
  */
 public class JsonDataTest extends Controle{
 	
-	static{
-		Engine.getInstance().registerControle(JsonDataTest.class);
-	}
-	
+
 	/**
 	 * 调用：dareport/dit.do?a=JsonDataTest&m=getJsonData
 	 */

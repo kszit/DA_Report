@@ -1,5 +1,5 @@
 <%@page import="com.kszit.dareport.web.controle.test.*" %>
-<%@page pageEncoding="utf-8" %>
+<%@page pageEncoding="gbk" %>
 <%
 System.out.println("context path:"+request.getContextPath());
 %>
@@ -8,6 +8,6 @@ System.out.println("context path:"+request.getContextPath());
 <html>
 <body>
 <h2>Hello World!</h2>
-<img alt="" src="test.gif">ä¸­æ–‡
+<img alt="" src="test.gif">ÖÐÎÄ
 </body>
 </html>
