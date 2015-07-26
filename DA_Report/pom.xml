@@ -11,6 +11,7 @@
 		<module>../DA_Report-core</module>
 		<module>../DA_Report-web</module>
 		<module>../DA_Report-base</module>
+		<module>../DA_Report-extend_dpra</module>
 	</modules>
 
 	<properties>

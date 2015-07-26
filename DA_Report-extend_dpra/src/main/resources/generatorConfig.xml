@@ -18,13 +18,13 @@
 			userId="root" password="root" /> 
 		
 
-		<javaModelGenerator targetPackage="com.bdcor.pip.web.data.domain"
+		<javaModelGenerator targetPackage="org.DA_Report.extend_dpra"
 			targetProject="src/main/java" />
-		<sqlMapGenerator targetPackage="com.bdcor.pip.web.data.domain"
+		<sqlMapGenerator targetPackage="org.DA_Report.extend_dpra"
 			targetProject="src/main/java" />
-		<javaClientGenerator targetPackage="com.bdcor.pip.web.data.domain"
+		<javaClientGenerator targetPackage="org.DA_Report.extend_dpra"
 			targetProject="src/main/java" type="XMLMAPPER" />
-		<table tableName="PIP_COMM_PATIENT_HISTORY" domainObjectName="VqisDateclc">
+		<table tableName="extend_dpra_menu" domainObjectName="Menu">
 		</table>
 	</context>
 </generatorConfiguration>
